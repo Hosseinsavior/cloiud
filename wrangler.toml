@@ -1,24 +1,18 @@
-name = "telegram-welcome-bot"
+name = "cloiud"
 main = "src/index.ts"
 compatibility_date = "2025-09-23"
 
-# ─── Durable Objects ───
 [[durable_objects.bindings]]
 name = "MEMBER_COUNTER"
 class_name = "MemberCounter"
 
-# ─── Migrations (لازم برای DO) ───
 [[migrations]]
 tag = "v1"
-new_classes = ["MemberCounter"]
+new_sqlite_classes = ["MemberCounter"]
 
-# ─── Variables عمومی ───
 [vars]
 MP3_URL = "https://your-r2-public-url.example.com/welcome.mp3"
 WELCOME_TEXT = "🎉 خوش آمدی {names} عزیز!\n\n👥 تعداد اعضای گروه: {count} نفر"
 GOODBYE_TEXT = "👋 {name} از گروه خارج شد.\n\n👥 تعداد اعضای باقی‌مانده: {count} نفر"
-MP3_CAPTION = " ♻آنســــوی نادیــــدنی♻ "
+MP3_CAPTION = "🎵 این هم یک هدیه کوچیک از طرف ما!"
 WEBHOOK_PATH = "/webhook"
-
-# BOT_TOKEN رو Secret کن:
-# wrangler secret put BOT_TOKEN
