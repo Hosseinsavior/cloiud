@@ -1,0 +1,6 @@
+name = "telegram-welcome-bot"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+# توکن ربات رو اینجا نگه ندار! از Secrets استفاده کن
+# با دستور: wrangler secret put BOT_TOKEN
