@@ -1,6 +1,12 @@
 name = "telegram-welcome-bot"
 main = "src/index.ts"
-compatibility_date = "2024-09-23"
+compatibility_date = "2025-09-23"
 
-# توکن ربات رو اینجا نگه ندار! از Secrets استفاده کن
-# با دستور: wrangler secret put BOT_TOKEN
+# Variables عمومی (نه حساس)
+[vars]
+MP3_URL = "https://your-r2-public-url.example.com/welcome.mp3"
+WELCOME_TEXT = "🎉 خوش آمدی {names} عزیز!\n\nامیدوارم اوقات خوبی رو اینجا داشته باشی 🌹"
+MP3_CAPTION = "♻آنســــوی نادیــــدنی♻"
+
+# BOT_TOKEN رو با دستور زیر Secret کن:
+# wrangler secret put BOT_TOKEN
